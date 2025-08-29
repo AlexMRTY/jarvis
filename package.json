@@ -1,0 +1,27 @@
+{
+  "name": "jarvis-mcp",
+  "version": "1.0.0",
+  "description": "MCP for Jarvis agent",
+  "main": "src/server.ts",
+  "type": "module",
+  "scripts": {
+    "server:build:": "tsc",
+    "server:build:watch": "tsc --watch",
+    "server:dev": "tsx src/server.ts",
+    "server:inspect": "set DANGEROUSLY_OMIT_AUTH=true && npx @modelcontextprotocol/inspector npm run server:dev"
+  },
+  "author": "Asif Rezai",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.17.4",
+    "@types/node": "^24.3.0",
+    "express": "^5.1.0",
+    "tsx": "^4.20.5",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.5",
+    "@types/express": "^5.0.3",
+    "typescript": "^5.9.2"
+  }
+}
